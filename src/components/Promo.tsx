@@ -18,20 +18,32 @@ export default function Promo() {
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
-            src="/images/spiral-circles.jpg"
-            alt="Abstract spiral circles"
+            src="https://cdn.poehali.dev/projects/2ae1ef7a-205d-4951-9056-f6d768f29550/files/3f8e1226-8952-4856-89cb-7b518d185b86.jpg"
+            alt="Магический абстрактный фон"
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-purple-950/30" />
         </motion.div>
       </div>
 
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg">
-        Анатомия возможностей
+      <h3 className="absolute top-12 right-6 text-amber-300 uppercase z-10 text-sm md:text-base lg:text-lg tracking-widest">
+        Праздник мечты
       </h3>
 
-      <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-5xl z-10">
-        Каждая секция — рамка для твоей истории. Формируй её, миксуй и позволь контенту
-        литься в неожиданные паттерны, заставляя листать дальше.
+      <div className="relative z-10 text-center px-6 max-w-4xl">
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-medium"
+        >
+          День рождения, выпускной или семейный праздник — подарите детям шоу, о котором они будут рассказывать всем друзьям
+        </motion.p>
+      </div>
+
+      <p className="absolute bottom-12 left-6 text-white/70 text-sm z-10 uppercase tracking-wide">
+        Выезд по всему городу
       </p>
     </div>
   );
